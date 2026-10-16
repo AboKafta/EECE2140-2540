@@ -18,16 +18,6 @@ EECE2140-1/
 └── README.md
 ```
 
-## Contents
-
-| Week | Folder | Description |
-|------|--------|-------------|
-| 1 | [`Week1`](./Week1) | Introductory exercises <!-- TODO: describe topics covered --> |
-| 2 | [`Week2/Classwork`](./Week2/Classwork) | In-class exercises <!-- TODO: describe topics covered --> |
-| 3 | [`Week3/Classwork`](./Week3/Classwork) | In-class exercises <!-- TODO: describe topics covered --> |
-| 4 | [`Week4/Mini_Project1`](./Week4/Mini_Project1) | Mini Project 1 <!-- TODO: one-line summary of the project --> |
-| 5 | [`Week5`](./Week5) | Weekly exercises <!-- TODO: describe topics covered --> |
-
 ## Getting Started
 
 ### Clone the repository
@@ -47,6 +37,52 @@ python filename.py
 ```
 
 > Requires Python 3. Check your version with `python --version`.
+
+## Git Workflow
+
+### One-time setup
+
+Only needed the first time you use Git on a computer:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+git clone https://github.com/AboKafta/EECE2140-1.git
+```
+
+### Every time you add or change files
+
+```bash
+# 1. Go to the repo folder
+cd path/to/EECE2140-1
+
+# 2. Get the latest version from GitHub first
+git pull
+
+# 3. Check what's new or changed
+git status
+
+# 4. Stage your changes
+git add .                     # stage everything
+# or
+git add Week6/filename.py     # stage one specific file
+
+# 5. Commit with a short message describing what you did
+git commit -m "Add Week 6 classwork"
+
+# 6. Upload to GitHub
+git push
+```
+
+### Useful extras
+
+```bash
+git log --oneline             # view commit history
+git restore filename.py       # undo unsaved changes to a file (before git add)
+git restore --staged file.py  # unstage a file (after git add, before commit)
+```
+
+> **Tip:** Git doesn't track empty folders. A new folder like `Week6/` only shows up on GitHub once it has at least one file in it.
 
 ## Author
 
