@@ -1,3 +1,6 @@
+//Georgy Rached, EECE2140, October 28 2026
+//This program does the power of a number
+//Assisted with Claude Opus 5.5
 #include <iostream>
 using namespace std;
 
