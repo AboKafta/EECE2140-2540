@@ -8,6 +8,7 @@ int count = 0;
 
 double power(double x, int n);
 
+//Finds x to the power n with fast recursion and counts each call
 double power(double x, int n)
 {
     count++;
